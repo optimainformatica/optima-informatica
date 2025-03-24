@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Óptima Informática - Optimización y Mantenimiento de PCs</title>
+    <!-- Cargar la fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Cambiar la fuente de todo el sitio */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
             background-color: #f0f0f0;
         }
+
         header {
             background: linear-gradient(90deg, #2c3e50, #4ca1af);
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px; /* Título más grande */
+            font-weight: 600;
         }
+
         nav {
             background: #333;
             padding: 15px;
@@ -25,6 +31,7 @@
             justify-content: center;
             gap: 20px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -32,10 +39,13 @@
             background: #4ca1af;
             border-radius: 5px;
             transition: 0.3s;
+            font-weight: 500;
         }
+
         nav a:hover {
             background: #2c3e50;
         }
+
         section {
             padding: 40px;
             max-width: 900px;
@@ -45,21 +55,26 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+
         .active {
             display: block;
         }
+
         .service-box {
             background: #e3f2fd;
             padding: 15px;
             margin: 15px 0;
             border-radius: 10px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            font-size: 18px; /* Fuente de servicio más grande */
         }
+
         .contact-form {
             padding: 20px;
             background: #e3f2fd;
             border-radius: 10px;
         }
+
         .btn-whatsapp {
             position: fixed;
             bottom: 20px;
@@ -72,18 +87,22 @@
             font-size: 18px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         }
+
         .btn-whatsapp:hover {
             background-color: #1EBE5D;
         }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
+
+        /* Títulos y subtítulos */
+        h2 {
+            font-size: 36px; /* Títulos más grandes */
+            font-weight: 600;
         }
-    </script>
+
+        h3 {
+            font-size: 24px; /* Subtítulos más grandes */
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
     <header>
